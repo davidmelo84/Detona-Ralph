@@ -8,10 +8,6 @@ Desenvolvi o jogo "Detona Ralph" como parte do meu portfólio de projetos de des
 
 Os jogadores enfrentam Ralph, que aparece aleatoriamente em diferentes áreas. O objetivo é acertá-los o mais rápido possível com o mouse.
 
-## Demonstração
-
-Jogue um pouco clicando [aqui](https://davidmelo84.github.io/Detona-Ralph/).
-
 ## Como Usar
 
 1. Clone o repositório:
