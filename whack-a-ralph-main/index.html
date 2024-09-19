@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack-A-Ralph</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400&family=Press+Start+2P&display=swap"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <section id="modal" class="modal">
+        <section class="modal-content">
+          <h2>Game Over!</h2>
+          <p>Acertos: <span id="modal-hits">0</span></p>
+          <p>Erros: <span id="modal-misses">0</span></p>
+          <p>Resultado: <span id="modal-result">0</span></p>
+          <button id="restart-btn">Jogar Novamente</button>
+        </section>
+      </section>
+
+      <section class="menu">
+        <section class="menu-items">
+          <section class="menu-time">
+            <h2 id="time-left">Tempo Restante:30</h2>
+          </section>
+
+          <section class="menu-hits">
+            <h2 id="hits">Acertos:0</h2>
+          </section>
+
+          <section class="menu-misses">
+            <h2 id="misses">Erros:0</h2>
+          </section>
+
+          <button id="level-btn">
+            <h2>Escolher Nível</h2>
+          </button>
+
+          <button id="start-btn">
+            <h2>Start</h2>
+          </button>
+
+          <!-- Botões de Pause e Reset -->
+          <button id="pause-btn">
+            <h2>Pause</h2>
+          </button>
+          <button id="resume-btn" style="display: none;">
+            <h2>Resume</h2>
+          </button>
+        </section>
+      </section>
+
+      <section id="level-options" class="level-options">
+        <button class="level-option" data-level="easy">Fácil</button>
+        <button class="level-option" data-level="moderate">Médio</button>
+        <button class="level-option" data-level="hard">Difícil</button>
+      </section>
+
+      <section class="panel">
+        <section class="panel-row">
+          <span class="square" id="1"></span>
+          <span class="square" id="2"></span>
+          <span class="square" id="3"></span>
+        </section>
+
+        <section class="panel-row">
+          <span class="square" id="4"></span>
+          <span class="square enemy" id="5"></span>
+          <span class="square" id="6"></span>
+        </section>
+
+        <section class="panel-row">
+          <span class="square" id="7"></span>
+          <span class="square" id="8"></span>
+          <span class="square" id="9"></span>
+        </section>
+      </section>
+    </main>
+
+    <script src="./src/scripts/engine.js"></script>
+  </body>
+</html>

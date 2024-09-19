@@ -1,0 +1,158 @@
+/* main.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../assets/images/wall.png");
+  overflow: hidden; /* Adiciona overflow hidden para evitar scroll desnecessário */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal h2 {
+  color: #000000;
+}
+
+.modal p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.modal button {
+  padding: 8px;
+  border-radius: inherit;
+  margin-top: 5px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ajusta a distribuição dos itens */
+  width: 100%;
+  height: 90px;
+  border-bottom: 5px solid #ffd700;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0 10px; /* Adiciona padding para evitar que os botões fiquem na borda */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem; /* Ajusta o espaço entre os botões */
+}
+
+.menu-time,
+.menu-hits,
+.menu-misses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#time-left {
+  color: #ffff00;
+}
+
+#hits,
+#modal-hits {
+  color: #007acc;
+}
+
+#misses,
+#modal-misses {
+  color: #ff0000;
+}
+
+#modal-result {
+  color: #008000;
+}
+
+#start-btn,
+#level-btn,
+#pause-btn,
+#resume-btn {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#pause-btn,
+#resume-btn {
+  display: inline-block;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.square {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #008000;
+}
+
+.enemy {
+  background-image: url("../assets/images/ralph.png");
+  background-size: cover;
+}
+
+.level-options {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.level-option {
+  display: block;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.level-option:hover {
+  background-color: #eeeeee;
+}
